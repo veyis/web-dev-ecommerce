@@ -25,4 +25,3 @@ export function NavLink(props: Omit<ComponentProps<typeof Link>, "className">) {
     />
   )
 }
-
