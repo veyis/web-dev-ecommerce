@@ -2,6 +2,8 @@ export async function isValidPassword(
   password: string,
   hashedPassword: string
 ) {
+  console.log((password))
+  
   return (await hashPassword(password)) === hashedPassword
 }
 
@@ -13,3 +15,4 @@ async function hashPassword(password: string) {
 
   return Buffer.from(arrayBuffer).toString("base64")
 }
+
